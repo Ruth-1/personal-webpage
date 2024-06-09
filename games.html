@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/game-styles.css" />
+    <title>Games</title>
+  </head>
+  <body>
+    <!-- Include header in the body!! -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Tic Tac Toe</h1>
+      <section class="tic-tac-toe-bg">
+        <div class="ui-container">
+          <div class="ui">
+            <div class="row">
+              <input type="text" class="cell" readonly />
+              <input type="text" class="cell" readonly />
+              <input type="text" class="cell" readonly />
+            </div>
+            <div class="row">
+              <input type="text" class="cell" readonly />
+              <input type="text" class="cell" readonly />
+              <input type="text" class="cell" readonly />
+            </div>
+            <div class="row">
+              <input type="text" class="cell" readonly />
+              <input type="text" class="cell" readonly />
+              <input type="text" class="cell" readonly />
+            </div>
+          </div>
+        </div>
+
+        <button class="js-reset-button reset-button">Reset Button</button>
+        <p class="js-moves-t"></p>
+      </section>
+
+      <section>
+        <h1>Rock Paper Scissors</h1>
+      </section>
+      <section class="rps-bg">
+        <button onclick="playGame('rock')" class="game-button">
+          <img class="move-image" src="../images/rock-emoji.png" alt="" />
+        </button>
+        <button onclick="playGame('scissors')" class="game-button">
+          <img class="move-image" src="../images/scissors-emoji.png" alt="" />
+        </button>
+        <button onclick="playGame('paper')" class="game-button">
+          <img class="move-image" src="../images/paper-emoji.png" alt="" />
+        </button>
+
+        <p class="js-moves game-text">Pick a move</p>
+        <div class="score-display">
+          <p class="js-results game-text">Scores will be displayed here</p>
+          <button
+            class="reset-score js-reset-score game-text"
+            onclick="
+        score.wins=0;
+        score.losses=0;
+        score.ties=0;
+        localStorage.removeItem('score')
+        resetScore()"
+          >
+            Reset Score
+          </button>
+        </div>
+
+        <button
+          onclick="displayResults()
+         score.wins=0;
+        score.losses=0;
+        score.ties=0;
+        localStorage.removeItem('score')
+        "
+          class="js-reset-score get-results"
+        >
+          End Round
+        </button>
+        <h2 class="js-final-results final-results"></h2>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a href="index.html" class="footer-link">Home</a>
+        <p>&copy; 2024 My Website</p>
+      </div>
+    </footer>
+    <script src="scripts/rock-paper-scissors.js"></script>
+    <script src="scripts/tic-tac-toe.js"></script>
+  </body>
+</html>

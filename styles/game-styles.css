@@ -1,0 +1,196 @@
+/*Layout and Positioning*/
+/*Box Model*/
+/*Typography*/
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: medium;
+  text-align: center;
+}
+p {
+  margin: 0;
+}
+
+/*Backgrounds and Images*/
+body {
+  background-color: aliceblue;
+  color: blue;
+}
+
+/*Spacing */
+body {
+  margin: 3px;
+  padding: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .nav {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+/*Header and Footer*/
+.container {
+  width: 90%;
+  margin: 5px auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  background-color: #3bafe6;
+  color: navy;
+  position: top;
+  width: 100%;
+  padding: 15px 10px;
+  /* overflow: hidden; */
+}
+.nav {
+  float: right;
+}
+
+.nav-link {
+  color: navy;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #68c0e9;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: #3bafe6;
+  color: navy;
+  text-align: center;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-link {
+  color: navy;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.footer-link:hover {
+  color: #d2f1ff;
+}
+
+/* game buttons */
+.game-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+}
+.move-image {
+  height: 60px;
+}
+.get-results {
+  background-color: navy;
+  color: white;
+  border: 3px white;
+  width: 120px;
+  height: 60px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+}
+.score-display {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.reset-score {
+  display: none;
+}
+
+/* tic tac toe */
+.tic-tac-toe-bg {
+  padding: 5px 0;
+}
+
+.ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border: solid 5px;
+}
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 0.5px solid;
+  text-align: center;
+  font-size: larger;
+  cursor: pointer;
+}
+/*when cell is clicked*/
+.cell:focus {
+  outline: none;
+}
+.cell:hover {
+  background-color: #68c0e9;
+}
+
+.ui-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.reset-button {
+  background-color: #3bafe6;
+  color: aliceblue;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #2b7da3;
+}
+
+.rps-bg {
+  margin: 60px;
+}
+
+.game-text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
