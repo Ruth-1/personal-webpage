@@ -1,0 +1,26 @@
+:root {
+  --main-bg-color: #748d92;
+  --main-text-colour: #212a31;
+  --accent-color: #2e3944;
+  --highlight-color: #d3d9d4;
+  --secondary-color: #124e66;
+}
+
+.next-page {
+  justify-items: right;
+  padding: 25px;
+}
+
+.next-page button {
+  background-color: var(--secondary-color);
+  font-size: 1.3em;
+  width: 60px;
+  margin: 10px;
+  color: var(--highlight-color);
+}
+
+.next-page button:hover {
+  background-color: var(--highlight-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}

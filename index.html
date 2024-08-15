@@ -4,48 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Webpage</title>
-    <link rel="stylesheet" href="styles/home-style.css" />
+    <link rel="stylesheet" href="css/pages/home-style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/components/buttons.css" />
   </head>
   <body>
     <header class="header">
-      <h1>Ruth's WorkStation</h1>
-      <h2>Here i am just working on numerous web applications</h2>
-      <div class="container">
+      <h1><a href="index.html">Ruth's WorkStation</a></h1>
+      <div>
         <nav class="nav">
-          <a href="#about" class="nav-link">About Me</a>
-          <a href="#portfolio" class="nav-link">Portfolio</a>
-          <a href="#contact" class="nav-link">Contact</a>
+          <a href="about-me.html" class="nav-link">About Me</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="resume-contact.html" class="nav-link">Contact</a>
           <a href="games.html" class="nav-link">Games</a>
         </nav>
       </div>
     </header>
+    <div class="intro">
+      <h2>Intro</h2>
+      <h3>Ruth Adesanya -- Software Engineer</h3>
+      <div class="container">
+        <p>
+          Hello! I'm a recent Computer Science graduate passionate about working
+          on diverse and impactful projects. My professional journey includes
+          experience at renowned tech companies like HubSpot and Toast, where
+          I've honed my skills across various technologies. While my tech stack
+          is versatile, I'm currently diving deep into vanilla JavaScript, CSS,
+          and HTML through this personal webpage.I'm excited to showcase more
+          complex projects in the future, leveraging frameworks like React, and
+          exploring Cloud Platforms and Databases. For more about my work and
+          contact details, click the 'About Me' section below. Enjoy browsing!
+        </p>
+        <div class="image-container">
+          <img src="assets/profile-pic/IMG_0007.JPG" alt="" />
+          <img src="assets/profile-pic/IMG_8777.JPG" alt="" />
+          <img src="assets/profile-pic/IMG_9774.JPG" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="next-page">
+      <a href="about-me.html"><button>next</button></a>
+    </div>
 
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        Hi! I'm Ruth Adesanya, a Computer Science Graduate. I love a lot of
-        things (^.^).
-      </p>
-    </section>
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>Here are some of the projects I have worked on:</p>
-      <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-      </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        You can reach me at:
-        <a href="mailto:reniolu.adesanya@gmail.com"
-          >reniolu.adesanya@gmail.com</a
-        >
-      </p>
-    </section>
-    <footer>
+    <footer class="footer">
       <p>&copy; 2024 Ruth Adesanya. All rights reserved.</p>
     </footer>
   </body>
